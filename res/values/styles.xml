@@ -1,0 +1,37 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    
+    <!-- 现在假设有两个Activity, A 和 B。 在A中可以启动B. 同时，A，B的theme属性均设置为上面定义的属性。 -->
+    <style name="Activity_Animation" parent="@android:style/Animation">
+
+        <!-- 当A启动B时，A退出，B进入 -->
+        <!-- B进入时的动画名称为android:activityOpenEnterAnimation -->
+        <item name="android:activityOpenEnterAnimation">@anim/activity_right_in</item>
+        <!-- A退出时的动画名称为android:activityOpenExitAnimation -->
+        <item name="android:activityOpenExitAnimation">@anim/activity_left_out</item>
+        <!-- 当B结束时，B退出，A进入。 -->
+        <!-- A进入时的动画名称为android:activityCloseEnterAnimation -->
+        <item name="android:activityCloseEnterAnimation">@anim/activity_left_in</item>
+        <!-- B退出的动画名称为android:activityCloseExitAnimation -->
+        <item name="android:activityCloseExitAnimation">@anim/activity_right_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/layout_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"             
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/title_icon"
+                style="?sdlIcon" />
+
+            <ProgressBar
+                android:id="@+id/title_progress"
+                style="?sdlTitleProgress"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/title_checkbox"
+                style="?sdlCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_text"
+                style="?sdlTitleText"
+                android:layout_toLeftOf="@id/title_progress"
+                android:layout_toRightOf="@id/title_icon" />
+
+            <TextView
+                android:id="@+id/subtitle_text"
+                style="?sdlSubtitleText"
+                android:layout_below="@id/title_text"
+                android:layout_toLeftOf="@id/title_progress"
+                android:layout_toRightOf="@id/title_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/title_divider"
+            android:layout_width="match_parent"
+            style="?sdlTitleDivider"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_dialog_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/scroll_dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dialog_message"
+                style="?sdlMessageText"  
+				android:padding="12.0dp"/>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layout_indeterminate_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/scroll_dialog_message"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/dialog_progress_indeterminate"
+                style="?sdlProgress" />
+
+            <TextView
+                android:id="@+id/progress_indeterminate_message"
+                style="?sdlProgressText" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_horizontal_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/layout_indeterminate_progress"
+            android:paddingBottom="8dp"
+            android:visibility="visible" >
+
+            <ProgressBar
+                android:id="@+id/horizontal_progress_bar"
+                style="?sdlHorizontalProgress"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/horizontal_progress_percent"
+                style="?sdlHorizontalProgressText"
+                android:layout_width="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/horizontal_progress_bar"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/horizontal_progress_count"
+                style="?sdlHorizontalProgressText"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/horizontal_progress_bar"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:id="@+id/horizontal_progress_message"
+                style="?sdlHorizontalProgressMessage"
+                android:layout_below="@id/horizontal_progress_bar"
+                android:layout_toLeftOf="@id/horizontal_progress_count"
+                android:layout_toRightOf="@id/horizontal_progress_percent" />
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/dialog_webview"
+            style="?sdlWebView"
+            android:layout_below="@id/layout_horizontal_progress"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/dialog_listview"
+            style="?sdlListView"
+            android:layout_below="@id/dialog_webview"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/dialog_gridview"
+            style="?sdlGridView"
+            android:layout_below="@id/dialog_webview"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/dialog_edittext"
+        style="?sdlEditText"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/dialog_checkbox"
+        style="?sdlCheckBox"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/dialog_button_divider"
+        style="?sdlButtonDivider"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/dialog_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/negative_dialog_button"
+            style="?sdlNegativeButton"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/negative_button_divider"
+            style="?sdlButtonSeparators"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/neutral_dialog_button"
+            style="?sdlNeutralButton"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/positive_button_divider"
+            style="?sdlButtonSeparators"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/positive_dialog_button"
+            style="?sdlPositiveButton"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

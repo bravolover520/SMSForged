@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>       
+    <attr name="sdlTitleText" format="reference" />
+    <attr name="sdlSubtitleText" format="reference" />
+    <attr name="sdlIcon" format="reference" />
+    <attr name="sdlTitleProgress" format="reference" />
+    <attr name="sdlTitleDivider" format="reference" />
+    <attr name="sdlMessageText" format="reference" />
+    <attr name="sdlProgress" format="reference" />
+    <attr name="sdlProgressText" format="reference" />
+    <attr name="sdlHorizontalProgress" format="reference" />
+    <attr name="sdlHorizontalProgressText" format="reference" />
+    <attr name="sdlHorizontalProgressMessage" format="reference" />
+    <attr name="sdlWebView" format="reference" />
+    <attr name="sdlListView" format="reference" />
+    <attr name="sdlGridView" format="reference" />
+    <attr name="sdlEditText" format="reference" />
+    <attr name="sdlCheckBox" format="reference" />
+    <attr name="sdlButtonDivider" format="reference" />
+    <attr name="sdlButtonSeparators" format="reference" />
+    <attr name="sdlNegativeButton" format="reference" />
+    <attr name="sdlNeutralButton" format="reference" />
+    <attr name="sdlPositiveButton" format="reference" />
+    
+    <attr name="sdlItemBackgroup" format="reference" />
+    <attr name="sdlItemCheckBox" format="reference" />
+    <attr name="sdlItemRadioButton" format="reference" />
+    
+</resources>

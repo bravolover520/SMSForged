@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:marquee="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_ad_layout"
+    android:orientation="vertical" >
+
+    <!-- 圆角 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 圆形的 -->
+
+        <LinearLayout
+            android:id="@+id/app_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:orientation="vertical" >
+
+            <com.jesus.smsforged.ui.CircleImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/app_bt" />
+
+            <com.jesus.smsforged.ui.MarqueeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                marquee:autoStart="true"
+                marquee:pause="2000"
+                marquee:speed="60" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="BT软件地址转换器超级版"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </com.jesus.smsforged.ui.MarqueeView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:orientation="vertical" >
+
+            <com.jesus.smsforged.ui.CircleImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/app_mt" />
+
+            <com.jesus.smsforged.ui.MarqueeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                marquee:autoStart="true"
+                marquee:pause="2000"
+                marquee:speed="60" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="磁链种子获取器"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </com.jesus.smsforged.ui.MarqueeView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:orientation="vertical" >
+
+            <com.jesus.smsforged.ui.CircleImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/app_love" />
+
+            <com.jesus.smsforged.ui.MarqueeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                marquee:autoStart="true"
+                marquee:pause="2000"
+                marquee:speed="60" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="甜蜜的情人结"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </com.jesus.smsforged.ui.MarqueeView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 按钮 -->
+
+    <Button
+        android:id="@+id/ad_app_wall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_wall_button_press"
+        android:text="@string/ad_wall_button" />
+
+</LinearLayout>

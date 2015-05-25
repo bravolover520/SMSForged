@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sdl_button_backgroud_pressed" type="drawable">#ea4c87</item>
+    <item name="sdl_button_backgroud_normal" type="drawable">@android:color/transparent</item>
+</resources>

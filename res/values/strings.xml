@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">短信伪造助手</string>
+    
+    <string name="rope">绳子</string>
+    <string name="ad_wall_button">获取更多应用</string>
+    <string name="creative">创意</string>
+    <string name="floatlabel_number">请输入号码，多个用";"分隔</string>
+    <string name="floatlabel_content">请输入内容，你可以从其他应用分享添加，也可以去创意分享看看哦!</string>
+    
+    <string name="go_">让娱乐就是那么简单</string>
+    <string name="loading">Loading...</string>
+    
+    <string-array name="sms_type"> 
+        <item>收短信</item> 
+        <item>发短信</item> 
+        <item>存草稿</item> 
+        <item>发送失败</item> 
+    </string-array> 
+    
+    <string-array name="sms_state"> 
+        <item>已读</item> 
+        <item>未读</item> 
+    </string-array> 
+
+</resources>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">    
+
+    <style name="Theme.Dialog" parent="android:style/Theme.Dialog">        
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Dialog.Default</item>
+        <item name="android:windowFullscreen">true</item>        
+        <item name="android:windowBackground">@drawable/sdl_holo_light</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="sdlTitleText">@style/SDL.Title</item>
+        <item name="sdlSubtitleText">@style/SDL.Subtitle</item>
+        <item name="sdlIcon">@style/SDL.Icon</item>
+        <item name="sdlTitleProgress">@style/SDL.TitleProgress</item>
+        <item name="sdlTitleDivider">@style/SDL.Title.Divider</item>
+        <item name="sdlMessageText">@style/SDL.Message</item>
+        <item name="sdlProgress">@style/SDL.IndeterminateProgress</item>
+        <item name="sdlProgressText">@style/SDL.ProgressMessage</item>
+        <item name="sdlHorizontalProgress">@style/SDL.HorizontalProgress</item>
+        <item name="sdlHorizontalProgressText">@style/SDL.HorizontalProgressText</item>
+        <item name="sdlHorizontalProgressMessage">@style/SDL.HorizontalProgressMessage</item>
+        <item name="sdlWebView">@style/SDL.WebView</item>
+        <item name="sdlListView">@style/SDL.ListView</item>
+        <item name="sdlGridView">@style/SDL.GridView</item>
+        <item name="sdlEditText">@style/SDL.EditText</item>
+        <item name="sdlCheckBox">@style/SDL.CheckBox</item>        
+        <item name="sdlButtonDivider">@style/SDL.Button.Divider</item>
+        <item name="sdlButtonSeparators">@style/SDL.Button.Separator</item>
+        <item name="sdlNegativeButton">@style/SDL.Button.Negative</item>
+        <item name="sdlNeutralButton">@style/SDL.Button.Neutral</item>
+        <item name="sdlPositiveButton">@style/SDL.Button.Positive</item>
+    </style>    
+    
+    <style name="ScrollableText">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="SDL"/>
+    
+    <style name="SDL.Title" parent="@style/ScrollableText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">6dp</item>        
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ea4c87</item>
+    </style>    
+    
+    <style name="SDL.Subtitle" parent="@style/ScrollableText">        
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginTop">-4dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="SDL.Icon">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+    </style>
+    
+    <style name="SDL.Title.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.5dp</item>
+        <item name="android:background">#ea4c87</item>
+    </style>
+    
+    <style name="SDL.Message">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">6.0dp</item>
+        <item name="android:layout_marginBottom">6.0dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>    
+    
+    <style name="SDL.TitleProgress">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+    
+    <style name="SDL.IndeterminateProgress">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+    
+    <style name="SDL.ProgressMessage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="SDL.HorizontalProgress">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:keepScreenOn">true</item>
+        <item name="android:progressDrawable">@null</item>
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="SDL.HorizontalProgressText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="SDL.HorizontalProgressMessage" parent="@style/ScrollableText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="SDL.WebView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignWithParentIfMissing">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="SDL.ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:listSelector">@drawable/selector_sdl_button</item>
+        <item name="android:layout_alignWithParentIfMissing">true</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">#e7e7e7</item>
+        <item name="android:dividerHeight">1.0dp</item>
+    </style>
+    
+    <style name="SDL.GridView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignWithParentIfMissing">true</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:listSelector">@null</item>
+    </style>
+    
+    <style name="SDL.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="SDL.CheckBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:button">@null</item>
+    </style>
+	
+    <style name="SDL.Button.Divider" parent="SDL.Button.Separator" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    
+    <style name="SDL.Button" parent="@android:style/Widget.Button">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">12dp</item>
+		<item name="android:paddingBottom">12dp</item>
+		<item name="android:minHeight">48dip</item>
+		<item name="android:minWidth">64dip</item>
+		<item name="android:paddingLeft">4dip</item>
+		<item name="android:paddingRight">4dip</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:singleLine">true</item>	
+		<item name="android:textStyle">normal</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>
+	
+    <style name="SDL.Button.Negative" parent="SDL.Button">
+        <item name="android:background">@drawable/selector_sdl_button</item>
+        <item name="android:textColor">@color/selector_sdl_button_text</item>
+    </style>
+    
+    <style name="SDL.Button.Neutral" parent="SDL.Button">
+        <item name="android:background">@drawable/selector_sdl_button</item>
+        <item name="android:textColor">@color/selector_sdl_button_text</item>
+    </style>
+    
+    <style name="SDL.Button.Positive" parent="SDL.Button">
+        <item name="android:background">@drawable/selector_sdl_button</item>
+        <item name="android:textColor">@color/selector_sdl_positive_button_text</item>
+    </style>
+
+    <style name="SDL.Button.Separator">
+		<item name="android:layout_width">1.0dp</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_weight">0</item>
+        <item name="android:background">#e7e7e7</item>
+	</style>
+	
+    <style name="SDL.List" parent="@style/SDL" />
+    <style name="SDL.List.Item" parent="@style/SDL.List" />
+    
+    <style name="SDL.List.Item.Label" parent="@style/SDL.List.Item">  
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">12dp</item>
+		<item name="android:paddingBottom">12dp</item>
+		<item name="android:minHeight">48dip</item>
+		<item name="android:minWidth">64dip</item>		
+		<item name="android:paddingLeft">18dip</item>
+		<item name="android:paddingRight">18dip</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:focusable">false</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textColor">@color/selector_sdl_item_text</item>
+    </style>
+    
+    <style name="SDL.List.Item.SubLabel" parent="@style/SDL.List.Item.Label">         
+		<item name="android:paddingTop">4dp</item>
+		<item name="android:paddingBottom">4dp</item>
+		<item name="android:minHeight">32dip</item>
+		<item name="android:minWidth">64dip</item>	
+		<item name="android:textSize">12sp</item>
+	</style>
+	
+    <style name="Animation.Dialog.Default" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/zoom_in_enter</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out_exit</item>
+    </style>
+    
+</resources>
